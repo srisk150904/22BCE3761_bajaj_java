@@ -44,9 +44,7 @@ Workflow execution completed without errors.
 * The above log confirms the automated startup execution, SQL query construction, and secure webhook submission using the JWT token returned by the API.
 * No controllers or external triggers were involved, aligning with the qualifier constraints.
 
----
 
-```md
 # Webhook-Driven SQL Submission App (Spring Boot – Java)
 
 A concise backend automation built for a technical qualifier. The project demonstrates structured API orchestration, dynamic SQL query composition, and secure webhook communication using JWT — all initiated at application startup without exposing web endpoints.
@@ -208,9 +206,6 @@ raw.githubusercontent.com/srisk150904/22BCE3761_bajaj_java/main/hiring-test-0.0.
 
 **GitHub:** Project is public and accessible for review.
 **Assessment Completed For:** *Bajaj Finserv Health Qualifier 1 — Java Track*
-
-````
-
 ---
 
 ### Next Step
