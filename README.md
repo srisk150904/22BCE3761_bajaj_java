@@ -87,24 +87,25 @@ The application performs the following automatically on launch:
 ---
 
 ## 📁 Project Structure
-```
-
 src/
 └── main/
-├── java/
-│   └── com/
-│       └── healthrx/
-│           └── webhookapp/
-│               ├── HiringTestApplication.java     # Main Spring Boot class
-│               ├── WebhookStartupRunner.java     # Executes workflow on startup
-│               ├── dto/                         # Data transfer objects
-│               │   ├── WebhookResponse.java
-│               │   └── FinalQueryRequest.java
-│               └── service/                     # Core business logic
-│                   ├── SqlSolverService.java
-│                   └── WebhookService.java
-└── resources/
-└── application.properties                   # Console app configuration
+    ├── java/
+    │   └── com/
+    │       └── healthrx/
+    │           └── webhookapp/
+    │               ├── HiringTestApplication.java      # Main Spring Boot class
+    │               ├── WebhookStartupRunner.java       # Executes workflow on startup
+    │               ├── dto/                           # Data transfer objects
+    │               │   ├── WebhookResponse.java
+    │               │   └── FinalQueryRequest.java
+    │               └── service/                       # Core business logic
+    │                   ├── SqlSolverService.java
+    │                   └── WebhookService.java
+    └── resources/
+        └── application.properties                    # Application configuration
+
+```
+
 
 ````
 
