@@ -85,6 +85,7 @@ The application performs the following automatically on launch:
 ---
 
 ## 📁 Project Structure
+```bash
 src/
 └── main/
     ├── java/
@@ -102,10 +103,9 @@ src/
     └── resources/
         └── application.properties                    # Application configuration
 
+
 ```
 
-
-````
 
 ---
 
