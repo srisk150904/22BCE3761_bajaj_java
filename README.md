@@ -86,22 +86,37 @@ The application performs the following automatically on launch:
 
 ## 📁 Project Structure
 ```bash
-src/
-└── main/
-    ├── java/
-    │   └── com/
-    │       └── healthrx/
-    │           └── webhookapp/
-    │               ├── HiringTestApplication.java      # Main Spring Boot class
-    │               ├── WebhookStartupRunner.java       # Executes workflow on startup
-    │               ├── dto/                           # Data transfer objects
-    │               │   ├── WebhookResponse.java
-    │               │   └── FinalQueryRequest.java
-    │               └── service/                       # Core business logic
-    │                   ├── SqlSolverService.java
-    │                   └── WebhookService.java
+22BCE3761_bajaj_java/
+│
+├── README.md                         # Project documentation
+├── hiring-test-0.0.1-SNAPSHOT.jar    # ✅ Compiled, runnable Spring Boot JAR for download
+│
+└── bajaj_java_proj/
+    │
+    ├── pom.xml                       # Maven build configuration
+    │
+    ├── src/
+    │   └── main/
+    │       ├── java/
+    │       │   └── com/
+    │       │       └── healthrx/
+    │       │           └── webhookapp/
+    │       │               ├── HiringTestApplication.java   # Main application entry point
+    │       │               ├── WebhookStartupRunner.java    # Startup workflow executor
+    │       │
+    │       │               ├── dto/
+    │       │               │   ├── WebhookResponse.java
+    │       │               │   └── FinalQueryRequest.java
+    │       │
+    │       └── service/
+    │           ├── SqlSolverService.java
+    │           └── WebhookService.java
+    │
     └── resources/
-        └── application.properties                    # Application configuration
+        └── application.properties    # Spring Boot runtime configuration (currently unused)
+    │
+    └── target/                       # Maven build output directory (auto-generated)
+
 
 
 ```
