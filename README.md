@@ -88,34 +88,36 @@ The application performs the following automatically on launch:
 ```bash
 22BCE3761_bajaj_java/
 │
-├── README.md                         # Project documentation
-├── hiring-test-0.0.1-SNAPSHOT.jar    # ✅ Compiled, runnable Spring Boot JAR for download
+├── README.md                             # Project documentation for recruiters
+├── hiring-test-0.0.1-SNAPSHOT.jar        # ✅ Compiled, runnable Spring Boot application JAR
 │
-└── bajaj_java_proj/
+└── bajaj_java_proj/                     # Maven project module folder containing full source code
     │
-    ├── pom.xml                       # Maven build configuration
+    ├── pom.xml                          # Maven configuration and dependency management file
     │
-    ├── src/
-    │   └── main/
-    │       ├── java/
-    │       │   └── com/
-    │       │       └── healthrx/
-    │       │           └── webhookapp/
-    │       │               ├── HiringTestApplication.java   # Main application entry point
-    │       │               ├── WebhookStartupRunner.java    # Startup workflow executor
-    │       │
-    │       │               ├── dto/
-    │       │               │   ├── WebhookResponse.java
-    │       │               │   └── FinalQueryRequest.java
-    │       │
-    │       └── service/
-    │           ├── SqlSolverService.java
-    │           └── WebhookService.java
+    └── src/
+    |   └── main/
+    |       ├── java/
+    |       │   └── com/
+    |       │       └── healthrx/
+    |       │           └── webhookapp/
+    |       │               │
+    |       │               ├── HiringTestApplication.java     # Main application class (Spring Boot entry point)
+    |       │               ├── WebhookStartupRunner.java      # Implements CommandLineRunner to execute workflow on startup
+    |       │               │
+    |       │               ├── dto/                         # Data Transfer Object (DTO) package – handles API request/response structure
+    |       │               │   ├── WebhookResponse.java     # Maps JSON response from webhook generation API (contains webhook URL + access token)
+    |       │               │   └── FinalQueryRequest.java  # Payload object used to submit final SQL query to webhook
+    |       │               │
+    |       │               └── service/                    # Service layer – contains core business logic and API orchestration
+    |       │                   ├── SqlSolverService.java   # Constructs the final SQL query based on question assignment logic
+    |       │                   └── WebhookService.java     # Manages webhook generation + SQL submission using JWT authentication
+    |       │
+    |       └── resources/
+    |           └── application.properties                # Spring Boot runtime configuration file (kept for standard backend project structure)
     │
-    └── resources/
-        └── application.properties    # Spring Boot runtime configuration (currently unused)
-    │
-    └── target/                       # Maven build output directory (auto-generated)
+    └── target/                          # Maven-generated compiled classes and JAR artifacts
+                                         # (Not manually modified; typically excluded using .gitignore after the assessment)
 
 
 
